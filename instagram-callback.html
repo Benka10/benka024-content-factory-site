@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Connexion Instagram — BENKA024</title>
+  <style>
+    body { font-family: Arial, sans-serif; display:grid; place-items:center; min-height:100vh; margin:0; background:#fafafa; color:#111; }
+    main { max-width:560px; padding:32px; text-align:center; background:white; border:1px solid #ddd; border-radius:20px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Connexion Instagram</h1>
+    <p>Redirection vers BENKA024 Content Factory…</p>
+    <p id="fallback" hidden>La redirection locale n’a pas démarré. Vérifie que Content Factory est ouvert, puis recharge cette page.</p>
+  </main>
+  <script>
+    const localCallback = "http://127.0.0.1:8766/callback/";
+    const target = localCallback + window.location.search;
+    window.location.replace(target);
+    setTimeout(() => document.getElementById("fallback").hidden = false, 2500);
+  </script>
+</body>
+</html>
